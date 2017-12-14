@@ -1,0 +1,13 @@
+# Spring related config
+spring:
+  application:
+    name: spring-cache-example
+  cache:
+    ehcache:
+      config: classpath:ehcache.xml
+
+
+server:
+  contextPath: /root
+  port: 8888
+  

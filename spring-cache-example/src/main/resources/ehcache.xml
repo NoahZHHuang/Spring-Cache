@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:noNamespaceSchemaLocation="ehcache.xsd"
+		 updateCheck="true"
+	     monitoring="autodetect"
+	     dynamicConfig="true">
+
+  <cache name="CacheA"
+         memoryStoreEvictionPolicy="LFU" 
+         maxEntriesLocalHeap="10000"
+		 timeToIdleSeconds="3"
+		 timeToLiveSeconds="5"> 
+  </cache>
+  
+  <cache name="CacheB"
+         memoryStoreEvictionPolicy="LFU" 
+         maxEntriesLocalHeap="10000"
+		 timeToIdleSeconds="6"
+		 timeToLiveSeconds="10"> 
+  </cache>
+  
+  
+</ehcache>
